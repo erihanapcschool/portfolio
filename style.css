@@ -87,6 +87,41 @@ ol {
   height: 100vh;
 }
 
+.scroll-downs {
+  position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 1rem;
+  left: 0;
+  margin: auto;
+  z-index: 9999;
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
 /*=============== タイトル =================*/
 .topimg {
   margin:50px;
@@ -461,23 +496,6 @@ div.foo{
     
   
 /*=============== 円プログレスバー =================*/
-.skill {
-  margin: 1rem;
-  font-size: 1.5rem;
-}
- 
-.skill img {
-  padding: 0.5rem;
-}
-.bord {
-  background:
-    linear-gradient(to right, #fff, #fff 6px, transparent 6px, transparent 4px) repeat-x left top / 10px 2px,
-    linear-gradient(to right, #fff, #fff 6px, transparent 6px, transparent 4px) repeat-x left bottom / 10px 2px,
-    linear-gradient(to bottom, #fff, #fff 6px, transparent 6px, transparent 4px) repeat-y left top / 2px 10px,
-    linear-gradient(to bottom, #fff, #fff 6px, transparent 6px, transparent 4px) repeat-y right top / 2px 10px;
-  padding: 1em;
-  margin: 2em 0;
-}
 
 .shop {
   margin-top: 100px;
