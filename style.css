@@ -472,8 +472,13 @@ div.foo{
   padding: 0.5rem;
 }
 .bord {
-  padding: 0.5rem;
-  border: 2px double #fff;
+  background:
+    linear-gradient(to right, #fff, #fff 6px, transparent 6px, transparent 4px) repeat-x left top / 10px 2px,
+    linear-gradient(to right, #fff, #fff 6px, transparent 6px, transparent 4px) repeat-x left bottom / 10px 2px,
+    linear-gradient(to bottom, #fff, #fff 6px, transparent 6px, transparent 4px) repeat-y left top / 2px 10px,
+    linear-gradient(to bottom, #fff, #fff 6px, transparent 6px, transparent 4px) repeat-y right top / 2px 10px;
+  padding: 1em;
+  margin: 2em 0;
 }
 
 .shop {
