@@ -115,17 +115,23 @@ setInterval(() => {
 
 //ふよふよ
 
-document.querySelector(".square").animate(
-    {
-      borderRadius: [
-        "50% 50% 50% 70%/50% 50% 70% 60%",
-        "80% 30% 50% 50%/50%",
-        "40% 40% 50% 40%/30% 50% 40% 80%"
-      ]
-    },
-    {
-      iterations: Infinity,
-      direction: "alternate",
-      duration: 7000
+var bar=$('#progress_bar');
+var percentage=parseInt($('#progress_percentage').html());
+
+function stopProgress(){
+  clearInterval(progress);
+}
+
+var progress= setInterval(function(){
+  percentage++;
+  if (percentage<=100){
+    $('#progress_percentage').html(percentage+'%');
+    if (percentage>10) {
+      bar.css('width',percentage+'%');
+      console.log(percentage);
     }
-  );
+  }
+  else {
+    stopProgress()
+  }
+},80);
