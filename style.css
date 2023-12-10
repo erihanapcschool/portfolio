@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 html,
@@ -43,9 +44,6 @@ ol {
 }
 
 .boxdashed {
-  
-  
-  position: relative;
   padding: 5em 1.5em;
  
   background-image: url(images/asfalt-light.png);
@@ -588,7 +586,7 @@ div.foo{
 .foot {
   background: linear-gradient(#655641,#d3e6ea);
   background-blend-mode: luminosity;
-  position: relative;
+  
  text-align: center;
   color: #333;
   margin: auto;
@@ -637,5 +635,6 @@ div.foo{
 .walk {
   position: absolute;
   left: 40%;
-  padding-bottom:0;
+  bottom:0;
+  z-index: 1;
 }
