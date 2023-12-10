@@ -464,17 +464,16 @@ div.foo{
   
 /*=============== 円プログレスバー =================*/
 .skill {
-  margin: 20px;
+  margin: 1rem;
   font-size: 1.5rem;
 }
-
-.skill p {
-  vertical-align: baseline;
+ 
+.skill img {
+  padding: 0.5rem;
 }
-
 .bord {
   padding: 0.5rem;
-  border: 2px solid#000;
+  border: 2px double #fff;
 }
 
 .shop {
