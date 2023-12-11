@@ -633,6 +633,6 @@ div.foo{
 .walk {
   position: absolute;
   left: 40%;
-  padding-bottom:0;
+  bottom:0;
 }
 
