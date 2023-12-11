@@ -17,11 +17,7 @@ html {
 }
 
 body {
-  background-image: url(images/asfalt-light.png);
-  background-repeat: repeat, repeat-x; 
-  background-color: #655641;
-  background: linear-gradient(black, #655641);
-  background-blend-mode: luminosity;
+  
   font-family: 'Zen Maru Gothic', serif;
   color: #fff;
 }
@@ -49,6 +45,11 @@ ol {
 
 .boxdashed {
   padding: 5em 1.5em;
+  background-image: url(images/asfalt-light.png);
+  background-repeat: repeat, repeat-x; 
+  background-color: #655641;
+  background: linear-gradient(black, #655641);
+  background-blend-mode: luminosity;
 }
 
 
