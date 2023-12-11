@@ -75,17 +75,22 @@ ol {
 
 
 /*=============== スクロールアニメーション =================*/
-
 .box {
   opacity: 0;
   height: 100vh;
 }
 
 #scrolly-video {
-  max-width: 100%;
+  width: 100vw;
   margin: 0 auto;
-  min-height: 100vh;
+  height: 100vh;
 }
+
+#scrolly-video video{
+  object-fit: cover;
+}
+
+
 
 .scroll-downs {
   position: sticky;
