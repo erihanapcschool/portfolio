@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 html,
@@ -43,9 +44,6 @@ ol {
 }
 
 .boxdashed {
-  
-  
-  position: relative;
   padding: 5em 1.5em;
  
   background-image: url(images/asfalt-light.png);
@@ -89,6 +87,41 @@ ol {
   height: 100vh;
 }
 
+.scroll-downs {
+  position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 1rem;
+  left: 0;
+  margin: auto;
+  z-index: 9999;
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
 /*=============== タイトル =================*/
 .topimg {
   margin:50px;
@@ -463,19 +496,6 @@ div.foo{
     
   
 /*=============== 円プログレスバー =================*/
-.skill {
-  margin: 20px;
-  font-size: 1.5rem;
-}
-
-.skill p {
-  vertical-align: baseline;
-}
-
-.bord {
-  padding: 0.5rem;
-  border: 2px solid#000;
-}
 
 .shop {
   margin-top: 100px;
@@ -584,7 +604,7 @@ div.foo{
 .foot {
   background: linear-gradient(#655641,#d3e6ea);
   background-blend-mode: luminosity;
-  position: relative;
+  
  text-align: center;
   color: #333;
   margin: auto;
@@ -634,5 +654,5 @@ div.foo{
   position: absolute;
   left: 40%;
   bottom:0;
+  z-index: 1;
 }
-
