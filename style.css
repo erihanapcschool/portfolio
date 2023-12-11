@@ -46,7 +46,7 @@ ol {
 .boxdashed {
   padding: 5em 1.5em;
   background-repeat: repeat, repeat-x; 
-  background-color: #655641;
+  
   background: linear-gradient(black, #655641);
   background-blend-mode: luminosity;
 }
