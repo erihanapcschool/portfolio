@@ -9,21 +9,25 @@
 
 html,
 body {
-  overscroll-behavior: contain;;
-}
-
-body {
-  font-family: 'Zen Maru Gothic', serif;
-  color: #fff;
+  overscroll-behavior: contain;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url(images/asfalt-light.png);
+  background-repeat: repeat, repeat-x; 
+  background-color: #655641;
+  background: linear-gradient(black, #655641);
+  background-blend-mode: luminosity;
+  font-family: 'Zen Maru Gothic', serif;
+  color: #fff;
+}
+
 img {
   max-width: 100%;
-  height: auto;
   vertical-align: bottom;
 }
 
@@ -45,12 +49,6 @@ ol {
 
 .boxdashed {
   padding: 5em 1.5em;
- 
-  background-image: url(images/asfalt-light.png);
-  background-repeat: repeat, repeat-x; 
-  background-color: #655641;
-  background: linear-gradient(black, #655641);
-  background-blend-mode: luminosity;
 }
 
 
@@ -75,17 +73,21 @@ ol {
 
 
 /*=============== スクロールアニメーション =================*/
-
 .box {
   opacity: 0;
   height: 100vh;
 }
 
 #scrolly-video {
-  max-width: 100%;
+  width: 100vw;
   margin: 0 auto;
-  min-height: 100vh;
+  height: 100vh;
 }
+
+#scrolly-video video{
+  object-fit: cover;
+}
+
 
 .scroll-downs {
   position: sticky;
