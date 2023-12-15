@@ -342,6 +342,7 @@ div.foo{
 
 .modal-close {
   position: absolute;
+  font-size: 3rem;
   top: 5px;
   right: 10px;
   text-decoration: none;
