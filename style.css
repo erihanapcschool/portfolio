@@ -323,6 +323,8 @@ div.foo{
 }
 
 .modal-img {
+  width: 100px;
+  height: auto;
   padding-left: 2rem;
 }
 
