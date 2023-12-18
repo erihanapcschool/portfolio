@@ -228,7 +228,7 @@ div.foo{
 
 .modal-wrapper {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   min-width: 300px;
   height: 100%;
   max-height: 850px;
@@ -245,6 +245,12 @@ div.foo{
   border: dashed 2px #00333a;
   border-radius: 8px;
   text-align: center;
+}
+
+@media screen and (max-width: 480px){
+.modal-wrapper {
+  max-width: 400px;
+}
 }
 
 .modal {
