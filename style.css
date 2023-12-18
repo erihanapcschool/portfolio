@@ -210,7 +210,6 @@ div.foo{
     width: 64px;
     height: 64px;
     transition: .2s;
-    position: absolute;
     
   }
 
@@ -435,6 +434,13 @@ div.foo{
   z-index: 500;
 }
 
+@media screen and (max-width: 480px) {
+  .top__link.open {
+    width: 40px;
+    height: auto;
+  }
+}
+
 
 
 /*=============== footer =================*/
@@ -451,8 +457,7 @@ div.foo{
 
 
 .foote {
-  padding: 2rem 0;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .container {
@@ -495,4 +500,13 @@ div.foo{
   left: 40%;
   bottom:0;
   z-index: 1;
+  width: 150px;
+     height: auto;
 }
+
+@media screen and (max-width: 480px){
+.walk {
+     width: 75px;
+     height: auto;
+      }
+   }
