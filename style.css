@@ -222,6 +222,17 @@ div.foo{
   text-align: center;
 }
 
+.bold {
+  font-size: 1.5rem;
+}
+
+.sample03 {
+  margin-top: 2rem;
+}
+
+.skill img {
+  margin-left: 0.5rem;
+}
 .line {
   margin-top: 5rem;
 }
